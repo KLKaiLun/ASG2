@@ -1,9 +1,11 @@
 # ASG2
 Curtis and Kai Lun Group 8
 
-our idea:
+intro:
 
-- clothing store that sells clothes, our brand name is K&C
+We are making a website for our clothing store called K&C to sell clothes
+
+features of website:
 
 - categorising clothes into men,women, children, t shirts, pants, jeans etc.
 
