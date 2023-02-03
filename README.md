@@ -1,6 +1,8 @@
 # ASG2
 Curtis and Kai Lun Group 8
 
+Github page: https://klkailun.github.io/ASG2/
+
 Intro:
 
 We are making a website for our clothing store called K&C to sell clothes
@@ -19,3 +21,8 @@ Features of website:
 - Have a add to cart feature so people can add mutliple products and check out all at once
 
 - Allow people to choose whether to self collect or opt for delivery
+
+- Have a search feature to find items easily
+
+
+Referrences:
