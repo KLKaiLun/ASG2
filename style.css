@@ -1,79 +1,63 @@
-/* index */
-/* header */
-.flex-container{
-    display: flex;
-    width: 100%;
-    height: 95px;
-    background-color: white;
-    justify-content: space-between;
+.catbox{
+    border: 1px solid transparent;
+    background-color: whitesmoke;
+    height: 50px;
 }
 
-.logo{
-    width: 180px;
-    /*margin-left: auto;
-    margin-right: auto;*/
-    justify-content: flex-start;
-    height: auto;
+ol{
+    float: left;
 }
-
-header li{
-    display: flex;
-    display: inline;
-    padding-left: 30px;
-}
-
-header li a{
-    color: black;
-    text-decoration: none;
-    padding: 13px;
-}
-
-header li a:hover{
-    color: royalblue;
-}
-
-header ul #loginandsignup a{
-    color: black;
-    background-color:aliceblue;
-    border-radius: 30px;
-    float: right;
+ol li{
+    float: left;
+    width: 90px;
     position: relative;
-    margin: 10px;
+    left: 25%;
+    list-style-type: none;
+    font-family: barlow condensed, sans-serif;
+    font-size: 18px;
 }
-
-header ul #loginandsignup a:hover{
-    background-color: grey;
-}
-
-/* body */
-.bodyindex{
-    margin: 0px;
-    background-color: lightgray;
-    color: white;
-    text-align: center;
-    /* can add font here */
-}
-
-.flex-container-nav{
-    display: inline;
-    width: 100%;
-    height: 30px;
-    justify-content: space-between;
-    text-align: center;
-    position: relative;
-}
-
-.flex-container-nav-li{
-    display: inline;
-}
-
-body li a{
-    /* font and font size */
-    color: black;
+ol li a{
     text-decoration: none;
-    padding: 13px;
+    color: black;
+    transition: 0.3s;
 }
 
-body li a:hover{
-    color: royalblue;
+ol li a:hover{
+    border-bottom: 4px solid red;
+}
+
+.fa-search{
+    position: absolute;
+    left: 82%;
+    top: 4%;
+    color: black;
+}
+
+.fa-user{
+    position: absolute;
+    left: 85%;
+    top: 4%;
+    color: black;
+}
+
+.fa-shopping-cart{
+    position: absolute;
+    left: 88%;
+    top: 4%;
+    color: black;
+    width: 25px;
+    height: -30px;
+    border-radius: 100px;
+    margin-top: -2px;
+    margin-left: -4px;
+}
+
+.icon{
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.icon :hover{
+    border-bottom: 4px solid red;
 }
