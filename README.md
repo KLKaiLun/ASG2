@@ -26,3 +26,5 @@ Features of website:
 
 
 Referrences:
+
+Mourya, N. (2022, March 14). How to build a responsive navigation bar using HTML and CSS. MUO. Retrieved February 4, 2023, from https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ 
