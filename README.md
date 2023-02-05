@@ -27,3 +27,5 @@ Features of website:
 
 References:
  (n.d.). Retrieved from https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/452425/item/goods_32_452425.jpg?width=750. 
+
+Mourya, N. (2022, March 14). How to build a responsive navigation bar using HTML and CSS. MUO. Retrieved February 4, 2023, from https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ 
