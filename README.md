@@ -8,7 +8,7 @@ Intro:
 We are making a website for our clothing store called K&C to sell clothes
 
 Features of website:
-- Putting down the price for each product
+- Putting down the price and rating for each product
 
 - Categorise clothes into men, women, children, t shirts, pants, jeans etc.
 
@@ -25,4 +25,5 @@ Features of website:
 - Have a search feature to find items easily
 
 
-Referrences:
+References:
+ (n.d.). Retrieved from https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/452425/item/goods_32_452425.jpg?width=750. 
