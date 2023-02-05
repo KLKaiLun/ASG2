@@ -1,79 +1,182 @@
-/* index */
-/* header */
-.flex-container{
-    display: flex;
-    width: 100%;
-    height: 95px;
-    background-color: white;
-    justify-content: space-between;
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo{
-    width: 180px;
-    /*margin-left: auto;
-    margin-right: auto;*/
+body {
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 20px;
+}
+
+/* DROPDOWN MENU */
+.wmk {
+    position: relative; 
+}
+
+.dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li + li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.wmk:hover .dropdown {
+    display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+/* CHECKBOX HACK */
+
+input[type=checkbox]{
+display: none;
+} 
+
+/*HAMBURGER MENU*/
+.hamburger {
+display: none;
+font-size: 24px;
+user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color:teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+
+}
+
+#page {
+    background-image: url("https://im.uniqlo.com/global-cms/spa/res1af6316a7008d3c515ff9644c444c727fr.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 0 right 20;
+    padding: 0 40px;
+    display: flex;
+    align-items: flex-start;
     justify-content: flex-start;
-    height: auto;
+    flex-direction: column;
+    /*background-image: url("ASG2/pageIMG.jpg")*/
 }
 
-header li{
-    display: flex;
-    display: inline;
-    padding-left: 30px;
+#page h1 {
+    font-size: 60px;
 }
 
-header li a{
+#page p {
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#page button {
+    background-color: transparent;
+    color: red;
+    border-color: beige;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#page button:hover{
     color: black;
-    text-decoration: none;
-    padding: 13px;
-}
-
-header li a:hover{
-    color: royalblue;
-}
-
-header ul #loginandsignup a{
-    color: black;
-    background-color:aliceblue;
-    border-radius: 30px;
-    float: right;
-    position: relative;
-    margin: 10px;
-}
-
-header ul #loginandsignup a:hover{
-    background-color: grey;
-}
-
-/* body */
-.bodyindex{
-    margin: 0px;
-    background-color: lightgray;
-    color: white;
-    text-align: center;
-    /* can add font here */
-}
-
-.flex-container-nav{
-    display: inline;
-    width: 100%;
-    height: 30px;
-    justify-content: space-between;
-    text-align: center;
-    position: relative;
-}
-
-.flex-container-nav-li{
-    display: inline;
-}
-
-body li a{
-    /* font and font size */
-    color: black;
-    text-decoration: none;
-    padding: 13px;
-}
-
-body li a:hover{
-    color: royalblue;
 }

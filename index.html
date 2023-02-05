@@ -1,30 +1,83 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-<head>
-    <title>K&C | Home</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>K&C | Home</title>
+    </head>
 <script src="script.js"></script>
 
-<!-- Header -->
-<header class="flex-container">
-    <img src="https://thumbnails.yayimages.com/10/a83/10a83d10.jpg"
-            class="logo">
-    <ul>
-        <li id="loginandsignup"><a href="#">Sign Up</a></li>
-        <li id="loginandsignup"><a href="#">Login</a></li>
-    </ul>
-</header>
+    <body>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">K&C</div>
 
-<!-- Body -->
-<body class="bodyindex">
-    <div class="flex-container-nav">
-    <ul>
-        <li class="flex-container-nav-li"><a href="index.html">Women</a></li>
-        <li class="flex-container-nav-li"><a href="#">Men</a></li>
-        <li class="flex-container-nav-li"><a href="#">Kids</a></li>
-    </ul>
-    </div>
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+
+                    <!-- USING CHECKBOX HACK -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                
+                    <!-- NAVIGATION MENUS -->
+                    <div class="menu">
+
+                        <li class="wmk">
+                            <a href="/">Women</a>
+                            <!-- DROPDOWN MENU -->
+                            <ul class="dropdown">
+                                <li><a href="/">Outerwear</a></li>
+                                <li><a href="/">Tops</a></li>
+                                <li><a href="/">Bottoms</a></li>
+                                <li><a href="/">Dresses</a></li>
+                                <li><a href="/">Skirts</a></li>
+    
+                            </ul>  
+                        </li>
+
+                        <li class="wmk">
+                            <a href="/">Men</a>
+                            <!-- DROPDOWN MENU -->
+                            <ul class="dropdown">
+                                <li><a href="/">Outerwear</a></li>
+                                <li><a href="/">Tops</a></li>
+                                <li><a href="/">Bottoms</a></li>
+                                <li><a href="/">Dropdown 3</a></li>
+                                <li><a href="/">Dropdown 4</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="wmk">
+                            <a href="/">Kids</a>
+
+                            <!-- DROPDOWN MENU -->
+                            <ul class="dropdown">
+                                <li><a href="/">Tops</a></li>
+                                <li><a href="/">Bottoms</a></li>
+                                <li><a href="/">Dropdown 2</a></li>
+                                <li><a href="/">Dropdown 3</a></li>
+                                <li><a href="/">Dropdown 4</a></li>
+
+                            </ul>  
+
+                        </li>
+
+                    </div>
+
+                </ul>
+            </div>
+        </nav>
+        <section id="page">
+            <h1>Awesome Deals</h1>
+            <p>Wide Variety Of Clothes To Choose From</p>
+            <button>Shop Now!</button>
+        </section>
+    </body>
+
+
 </html>
