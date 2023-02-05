@@ -44,6 +44,7 @@ li {
     font-size: 18px;
 }
 
+
 .menu li:hover {
     background-color: #4c9e9e;
     border-radius: 5px;
@@ -51,8 +52,9 @@ li {
 }
 
 .menu li {
-    padding: 5px 14px;
+    padding: 5px 20px;
 }
+
 
 /* DROPDOWN MENU */
 .wmk {
@@ -71,6 +73,7 @@ li {
 .dropdown li + li {
     margin-top: 10px;
 }
+
 
 .dropdown li {
     padding: 0.5em 1em;
@@ -143,4 +146,40 @@ user-select: none;
         background-color: #4c9e9e;
     }
 
+}
+
+#page {
+    background-image: url("https://im.uniqlo.com/global-cms/spa/res1af6316a7008d3c515ff9644c444c727fr.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 0 right 20;
+    padding: 0 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    /*background-image: url("ASG2/pageIMG.jpg")*/
+}
+
+#page h1 {
+    font-size: 60px;
+}
+
+#page p {
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#page button {
+    background-color: transparent;
+    color: red;
+    border-color: beige;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#page button:hover{
+    color: black;
 }
