@@ -3,6 +3,7 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", window.scrollY > 0);
     })
 
+/*
 var jsondata = {"Name": "xyz","Price": "abc"};
 var settings = {
   "async": true,
@@ -18,15 +19,10 @@ var settings = {
   "data": JSON.stringify(jsondata)
 }
 
-$.ajax({
-    method: "POST",
-    url: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/452425/item/goods_32_452425.jpg?width=750",
-    data: {Name: "Regular Collar Polo Shirt", Price: "$50"}
-})
-
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
+*/
 
 var settings = {
   "async": true,
