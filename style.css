@@ -95,6 +95,7 @@ li {
     align-items: center;
 }
 .icons i{
+    color: black;
     margin-right: 30px;
     margin-left: 15px;
     font-size: 25px;
