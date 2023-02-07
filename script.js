@@ -39,3 +39,7 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
+
+fetch('https://kclothes-1417.restdb.io/home/db/kclothes-1417/')
+.then(response => response.text())
+.then(html => alert(html));
