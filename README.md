@@ -5,7 +5,7 @@ Github page: https://klkailun.github.io/ASG2/
 
 Intro:
 
-We are making a website for our clothing store called K&C to sell clothes
+We are making a website for our clothing store called K&C to sell clothes. Our store will sell all different kinds of clothes, some of which are shirts, pants, jeans and dresses. The target audience for the website is for the general public to purchase any clothes tehy want from our store.
 
 Features of website:
 - Putting down the price and rating for each product
@@ -25,7 +25,7 @@ Features of website:
 - Have a search feature to find items easily
 
 
-References:
+References for pictures used:
  (n.d.). Retrieved from https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/452425/item/goods_32_452425.jpg?width=750. 
 
 Mourya, N. (2022, March 14). How to build a responsive navigation bar using HTML and CSS. MUO. Retrieved February 4, 2023, from https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ 
