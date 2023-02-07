@@ -40,3 +40,5 @@ The official premium lifestyle brand of Leo Messi. The Messi Store. (n.d.). Retr
 Women's, Men's & Kids' Fashion: H&M SG. H&M. (n.d.). Retrieved February 7, 2023, from https://www2.hm.com/en_sg/index.html 
 
 Buy women's fashion apparel online: Zalora singapore. zalora.sg. (n.d.). Retrieved February 7, 2023, from https://www.zalora.sg/women/
+
+Sign-up/login form - codepen. codepen.io. (n.d.). Retrieved February 7, 2023, from https://codepen.io/ehermanson/pen/KwKWEv

@@ -99,6 +99,7 @@ li {
     margin-left: 15px;
     font-size: 25px;
     transition: all .50s ease;
+    color: black;
 }
 .icons i:hover {
     color: blue;
