@@ -21,6 +21,7 @@ body {
 
 header {
     position: fixed;
+    height: 80px;
     width: 100%;
     top: 0;
     right: 0;
@@ -31,6 +32,12 @@ header {
     background: transparent;
     padding: 2px 5%;
     transition: all .50s ease;
+}
+
+header.sticky {
+    background: whitesmoke;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
 
 li {
@@ -53,6 +60,8 @@ li {
 }
 
 .dropdown li {
+    background-color: blue;
+    border-radius: 8px;
     padding: 0.5em 0em;
     width: 0.2em;
     text-align: center;
@@ -161,37 +170,129 @@ li {
     }
 }
 
-.page {
-    height: 100vh;
+section {
+    padding: 2% 5%;
+}
+.main-page {
     width: 100%;
+    height: 100vh;
+    background-image: url(pictures/pageIMG.jpg);
+    background-position: left;
     background-size: cover;
-    background-position: top 0 right 20;
-    padding: 0 40px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    /*background-image: url("ASG2/pageIMG.jpg")*/
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
 }
-
-.page h1 {
-    font-size: 60px;
-}
-
-.page p {
+.banner h4 {
+    color: blue;
     font-size: 20px;
-    padding-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
 }
-
-.page button {
-    background-color: transparent;
-    color: red;
-    border-color: beige;
-    font-size: 30px;
-    font-weight: bold;
-    transition: 0.5s;
-}
-
-.page button:hover {
+.banner h3 {
     color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
 }
+.button {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.featureIcon {
+    width: 100px;
+    height: 100px;
+}
+.featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px;
+}
+.featureDesc{
+    color: grey;
+    width: 50%;
+    height: 100px;
+}
+.center-text h2 {
+    color: black;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.center-text span {
+    color: red;
+}
+
+.pay {
+    width: 180px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+footer {
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+footer h4{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+footer p{
+    font-size: 24px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+footer .pay {
+    margin: 0px 10px 15px 0;
+}
+footer .icon {
+    font-size: 30px;
+}
+footer i:hover,
+footer a:hover {
+    color: #088178;
+}
+
