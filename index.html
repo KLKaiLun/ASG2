@@ -19,10 +19,19 @@
         <script src="https://kclothes-1417.restdb.io/assets/js/jquery.datetimepicker.full.min.js"></script>
         <script src="https://kclothes-1417.restdb.io/rest/_jsapi.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <title>K&C | Home</title>
     </head>
 
     <body>
+        <div id="preloader">
+            <style>
+                body {
+                    overflow: hidden;
+                }
+            </style>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_x62chJ.json" background="#FFFFFF" speed="2" style="width: 100%; height: 100%;" autoplay></lottie-player>
+        </div>
         <header>
             <img class="logo" src="pictures/k&c-modified.png" alt="logo">
             <ul class="navbar">
@@ -134,5 +143,11 @@
             </div>
         </footer>
     <script src="script.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        setTimeout(function() {
+          loader.remove();
+        }, 1500); // The animation will disappear after 3000 milliseconds (3 seconds)
+    </script>
     </body>
 </html>
