@@ -3,26 +3,7 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", window.scrollY > 0);
     })
 
-/*
-var jsondata = {"Name": "xyz","Price": "abc"};
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://kclothes-1417.restdb.io/rest/product",
-  "method": "POST",
-  "headers": {
-    "content-type": "application/json",
-    "x-apikey": "63dd35e73bc6b255ed0c460e",
-    "cache-control": "no-cache"
-  },
-  "processData": false,
-  "data": JSON.stringify(jsondata)
-}
 
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
-*/
 var db = new restdb("63dd35e73bc6b255ed0c460e", settings);
 
 $(function () {
@@ -325,10 +306,12 @@ $.ajax(settings).done(function (response) {
     var item = data[i];
     
     // Check if the subcategory property of the object is "Outerwear"
-    if (item.Subcategory === "Outerwear") {
+    if (item.subcategory === "Outerwear") {
       // Create a new HTML element to represent the data
-      var el = $("<div>").text(JSON.stringify(item.Name));
+      var el = $("<div>").text(JSON.stringify(item));
       
+      var output = document.getElementById("Outerwear");
+      output.innerHTML = item.name;
 
       // Append the new element to the HTML document
       $("body").append(el);
@@ -336,25 +319,61 @@ $.ajax(settings).done(function (response) {
   }
 });*/
 
-$.ajax({
-  url: "https://kclothes-1417.restdb.io/rest/product",
-  method: "GET",
-  headers: {
-    "x-apikey": "63dd35e73bc6b255ed0c460e"
-  }
-}).done(function(data) {
-  // If the request is successful, data will contain the array of objects returned from the database
-  
-  // Loop through each object in the data array
-  for (var i = 0; i < data.length; i++) {
-    var item = data[i];
-    
 
-      // Create a new HTML element to represent the data
-      var el = $("<img>").attr("src", 'https://kclothes-1417.restdb.io/media/'+item.Image);
+/*$.ajax({
+    url: "https://kclothes-1417.restdb.io/rest/product",
+    method: "GET",
+    headers: {
+      "x-apikey": "63dd35e73bc6b255ed0c460e"
+    }
+  }).done(function(data) {
+    // If the request is successful, data will contain the array of objects returned from the database
+    
+    // Loop through each object in the data array
+    for (var i = 0; i < data.length; i++) {
+      var item = data[i];
+      json = json.filter((Outerwear) =>{
+              // Create a new HTML element to represent the data
+      var el = $("<div>").text(JSON.stringify(item));
       
       // Append the new element to the HTML document
       $("body").append(el);
-  }
-});
+      })
 
+    }
+  });*/
+
+
+  
+  const productContainer = document.getElementById('product-container');
+  
+  fetch("https://kclothes-1417.restdb.io/rest/product", {
+    headers: {
+      "x-apikey": "63dd35e73bc6b255ed0c460e"
+    }
+  })
+    .then(response => response.json())
+    .then(products => {
+      for (const product of products) {
+        const productCard = document.createElement('div');
+        productCard.classList.add('product-card');
+  
+        const productImage = document.createElement('img');
+        productImage.classList.add('product-image');
+        productImage.src = product.Image;
+  
+        const productName = document.createElement('div');
+        productName.classList.add('product-name');
+        productName.innerText = product.Name;
+  
+        const productPrice = document.createElement('div');
+        productPrice.classList.add('product-price');
+        productPrice.innerText = '$' + product.Price;
+  
+        productCard.appendChild(productImage);
+        productCard.appendChild(productName);
+        productCard.appendChild(productPrice);
+        productContainer.appendChild(productCard);
+      }
+    })
+    .catch(error => console.error(error));
