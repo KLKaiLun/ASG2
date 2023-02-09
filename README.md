@@ -3,8 +3,12 @@ Curtis and Kai Lun Group 8
 
 Github page: https://klkailun.github.io/ASG2/
 
-Intro:
+Overview:
+Welcome to our clothing website, the ultimate destination for fashion-forward individuals who are looking to make a statement with their wardrobe. Our website offers a wide range of clothing options, including outerwear, tops, bottoms, and accessories, so you can always find the perfect item to fit your style. Whether you're looking for bold, unique pieces or timeless, classic styles, we've got you covered.
 
+Our website is easy to navigate and user-friendly, making it simple for you to find what you're looking for. We feature high-quality images and detailed product descriptions, so you know exactly what you're getting. Our clothing is made from the finest materials and designed with the latest fashion trends in mind, so you can stay ahead of the curve and look your best every day. So, why wait? Shop now and discover the perfect pieces to elevate your wardrobe!
+
+Intro:
 We are making a website for our clothing store called K&C to sell clothes. Our store will sell all different kinds of clothes, some of which are shirts, pants, jeans and dresses. The target audience for the website is for the general public to purchase any clothes tehy want from our store.
 
 Features of website:
@@ -40,3 +44,5 @@ The official premium lifestyle brand of Leo Messi. The Messi Store. (n.d.). Retr
 Women's, Men's & Kids' Fashion: H&M SG. H&M. (n.d.). Retrieved February 7, 2023, from https://www2.hm.com/en_sg/index.html 
 
 Buy women's fashion apparel online: Zalora singapore. zalora.sg. (n.d.). Retrieved February 7, 2023, from https://www.zalora.sg/women/
+
+Sign-up/login form - codepen. codepen.io. (n.d.). Retrieved February 7, 2023, from https://codepen.io/ehermanson/pen/KwKWEv

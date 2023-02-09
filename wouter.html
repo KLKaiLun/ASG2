@@ -11,12 +11,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+        <script src="https://kclothes-1417.restdb.io/assets/js/jquery-serialize-object.min.js"></script>
+        <script src="https://kclothes-1417.restdb.io/assets/js/jquery.datetimepicker.full.min.js"></script>
+        <script src="https://kclothes-1417.restdb.io/rest/_jsapi.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
         <title>K&C | Women</title>
+        <link rel="stylesheet" href="product.css" />
     </head>
 
     <body>
         <header>
-            <img class="logo" src="https://thumbnails.yayimages.com/10/a83/10a83d10.jpg" alt="logo">
+            <img class="logo" src="pictures/k&c-modified.png" alt="logo">
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li class="wmk"><a href='#'>Women</a>
@@ -49,13 +58,17 @@
             </ul>
             <div class="icons">
                 <i class="fa fa-search" aria-hidden="true"></i>
-                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="loginsgnup.html"><i class="fa fa-user" aria-hidden="true"></i></a>
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <div class="shrink-menu">
                     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 </div>
             </div>
         </header>
+
+        <!--<h1>Our Products</h1>-->
+        <div id="product-container">
+        </div> 
         <!--
         <div class="page">
             <img class="banner" src="https://im.uniqlo.com/global-cms/spa/res1af6316a7008d3c515ff9644c444c727fr.jpg" alt="banner">
@@ -64,7 +77,39 @@
             <button>Shop Now!</button>
         </div>
         -->
-    <script src="script.js"></script>
+        <footer class="final-section">
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>Help</h4>
+                <a href="#">FAQ</a>
+                <a href="#">Refund</a>
+                <a href="#">Feedback</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">Profile</a>
+            </div>
+            <div class="col">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-instagram' ></i>
+                    <i class='bx bxl-youtube' ></i>
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img class="pay" src="pictures/PaymentGate.png" alt="">
+            </div>
+        </footer>
+    <script src="wouter.js"></script>
     </body>
 
 
