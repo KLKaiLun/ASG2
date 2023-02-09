@@ -1,4 +1,5 @@
 #product-container {
+    margin-top: 75px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

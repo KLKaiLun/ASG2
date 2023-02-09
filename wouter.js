@@ -1,3 +1,8 @@
+window.addEventListener("scroll", function(){
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+  })
+
 const productContainer = document.getElementById('product-container');
   
 fetch("https://kclothes-1417.restdb.io/rest/product", {
