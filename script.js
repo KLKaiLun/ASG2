@@ -286,3 +286,18 @@ $.ajax(settings).done(function (response) {
   console.log(response);
 });
 
+/*
+$.ajax({
+  url: "https://kclothes-1417.restdb.io/rest/product",
+  method: "GET",
+  headers: {
+    "x-apikey": "63dd35e73bc6b255ed0c460e",
+  }
+}).done(function(data) {
+  for (var i=0; i < data.length; i++) {
+    var item = data[i];
+    const myJSON = JSON.stringify(item);
+    console.log(JSON.parse(item[0]));
+  }
+})
+*/
