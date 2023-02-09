@@ -14,7 +14,7 @@ fetch("https://kclothes-1417.restdb.io/rest/product", {
   .then(response => response.json())
   .then(products => {
     for (const product of products) {
-        if (product.Subcategory === "Outerwear" && product.Category === "Women") {  
+        if (product.Subcategory === "Accessories" && product.Category === "Men") {  
             const productCard = document.createElement('div');
             productCard.classList.add('product-card');
 
