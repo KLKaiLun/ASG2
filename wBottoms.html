@@ -19,20 +19,11 @@
         <script src="https://kclothes-1417.restdb.io/assets/js/jquery.datetimepicker.full.min.js"></script>
         <script src="https://kclothes-1417.restdb.io/rest/_jsapi.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <title>K&C | Home</title>
+        <title>K&C | Women</title>
         <link rel="stylesheet" href="product.css" />
     </head>
 
     <body>
-        <div id="preloader">
-            <style>
-                body {
-                    overflow: hidden;
-                }
-            </style>
-            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_x62chJ.json" background="#FFFFFF" speed="2" style="width: 100%; height: 100%;" autoplay></lottie-player>
-        </div>
         <header>
             <img class="logo" src="pictures/k&c-modified.png" alt="logo">
             <ul class="navbar">
@@ -75,46 +66,17 @@
             </div>
         </header>
 
-        <section class="main-page">
-            <div class="banner">
-                <h4>Awesome Deals</h4>
-                <h3>Wide Variety <br> Of Clothes To Choose From</h3>
-                <a href="#trending" class="button">Shop Now<i class='bx bx-down-arrow-alt'></i></a>
-            </div>
-        </section>
-
-        <div class="features">
-            <div class="feature">
-                <img class="featureIcon" src="pictures/FreeShipping.png" alt="">
-                <span class="featureTitle">FREE SHIPPING</span>
-                <span class="featureDesc">Free worldwide shipping on all orders.</span>
-            </div>
-            <div class="feature">
-                <img class="featureIcon" src="pictures/ReturnProducts.png" alt="">
-                <span class="featureTitle">30 DAYS RETURN</span>
-                <span class="featureDesc">No question return and easy refund in 14 days</span>
-            </div>
-            <div class="feature">
-                <img class="featureIcon" src="pictures/1Week.png" alt="">
-                <span class="featureTitle">SAME WEEK DELIVERY</span>
-                <span class="featureDesc">Get your item delivered within 7 days</span>
-            </div>
-            <div class="feature">
-                <img class="featureIcon" src="pictures/ContactUs.png" alt="">
-                <span class="featureTitle">CONTACT US</span>
-                <span class="featureDesc">Reach out to us for any assistance</span>
-            </div>
-        </div>
-
-        <section class="trending-product" id="trending">
-            <div class="center-text">
-                <h2>Our Trending <span>Products</span></h2>
-            </div>
-        </section>
-
+        <!--<h1>Our Products</h1>-->
         <div id="product-container">
         </div> 
-
+        <!--
+        <div class="page">
+            <img class="banner" src="https://im.uniqlo.com/global-cms/spa/res1af6316a7008d3c515ff9644c444c727fr.jpg" alt="banner">
+            <h1>Awesome Deals</h1>
+            <p>Wide Variety Of Clothes To Choose From</p>
+            <button>Shop Now!</button>
+        </div>
+        -->
         <footer class="final-section">
             <div class="col">
                 <h4>About</h4>
@@ -130,7 +92,7 @@
             </div>
             <div class="col">
                 <h4>My Account</h4>
-                <a href="loginsgnup.html">Sign In</a>
+                <a href="#">Sign In</a>
                 <a href="#">View Cart</a>
                 <a href="#">Profile</a>
             </div>
@@ -147,13 +109,8 @@
                 <img class="pay" src="pictures/PaymentGate.png" alt="">
             </div>
         </footer>
-    <script src="script.js"></script>
-    <script src="product.js"></script>
-    <script>
-        var loader = document.getElementById("preloader");
-        setTimeout(function() {
-          loader.remove();
-        }, 1500); // The animation will disappear after 3000 milliseconds (3 seconds)
-    </script>
+    <script src="wBottoms.js"></script>
     </body>
+
+
 </html>

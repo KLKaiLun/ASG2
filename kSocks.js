@@ -3,6 +3,7 @@ window.addEventListener("scroll", function(){
   header.classList.toggle("sticky", window.scrollY > 0);
   })
 
+
 const productContainer = document.getElementById('product-container');
   
 fetch("https://kclothes-1417.restdb.io/rest/product", {
@@ -13,7 +14,7 @@ fetch("https://kclothes-1417.restdb.io/rest/product", {
   .then(response => response.json())
   .then(products => {
     for (const product of products) {
-        if (product.Subcategory === "Outerwear" && product.Category === "Women") {  
+        if (product.Subcategory === "Socks" && product.Category === "Kids") {  
             const productCard = document.createElement('div');
             productCard.classList.add('product-card');
 
