@@ -6,7 +6,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="FAQ.css" />
         <script src="https://kit.fontawesome.com/27cc4ca2c4.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +19,20 @@
         <script src="https://kclothes-1417.restdb.io/assets/js/jquery.datetimepicker.full.min.js"></script>
         <script src="https://kclothes-1417.restdb.io/rest/_jsapi.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
-        <title>K&C | Kids</title>
-        <link rel="stylesheet" href="product.css" />
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <title>K&C | Home</title>
+        <link rel="stylesheet" href="product.css"/>
     </head>
 
     <body>
+        <div id="preloader">
+            <style>
+                body {
+                    overflow: hidden;
+                }
+            </style>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_x62chJ.json" background="#FFFFFF" speed="2" style="width: 100%; height: 100%;" autoplay></lottie-player>
+        </div>
         <header>
             <img class="logo" src="pictures/k&c-modified.png" alt="logo">
             <ul class="navbar">
@@ -59,24 +68,31 @@
             <div class="icons">
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <a href="loginsgnup.html"><i class="fa fa-user" aria-hidden="true"></i></a>
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <a href="shoppingcart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                 <div class="shrink-menu">
                     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 </div>
             </div>
         </header>
 
-        <!--<h1>Our Products</h1>-->
-        <div id="product-container">
-        </div> 
-        <!--
-        <div class="page">
-            <img class="banner" src="https://im.uniqlo.com/global-cms/spa/res1af6316a7008d3c515ff9644c444c727fr.jpg" alt="banner">
-            <h1>Awesome Deals</h1>
-            <p>Wide Variety Of Clothes To Choose From</p>
-            <button>Shop Now!</button>
+        <div class="FAQ">
+            <h1>FAQ</h1>
+            <p>Q: What sizes do your clothing items come in?</p>
+            <p>A: Our clothing items are available in a range of sizes, from XS to 3XL. Please refer to the product description for specific information on each item.</p>
+            <p>Q: What is your return policy?</p>
+            <p>A: We accept returns within 30 days of purchase for a full refund or exchange. The items must be in their original condition with all tags attached.</p>
+            <p>Q: How long will it take for my order to arrive?</p>
+            <p>A: Delivery time depends on your location and the shipping method you choose. Standard shipping usually takes 3-7 business days, while expedited shipping options are available for faster delivery.</p>
+            <p>Q: How much does shipping cost?</p>
+            <p>A: Shipping cost is calculated based on the weight of your order and your shipping destination. You can view the shipping cost at checkout before you place your order.</p>
+            <p>Q: How can I pay for my order?</p>
+            <p>A: We accept major credit cards (Visa, Mastercard, American Express)</p>
+            <p>Q: Can I change or cancel my order?</p>
+            <p>A: If you need to change or cancel your order, please contact us as soon as possible. If your order has already been shipped, it cannot be cancelled or changed.</p>
+            <p>Q: What is your privacy policy?</p>
+            <p>A: We take the privacy of our customers very seriously. Personal information collected on our website is used only for the purpose of processing your order and delivering your purchases. We do not share or sell your information to third parties.</p>
         </div>
-        -->
+
         <footer class="final-section">
             <div class="col">
                 <h4>About</h4>
@@ -109,8 +125,13 @@
                 <img class="pay" src="pictures/PaymentGate.png" alt="">
             </div>
         </footer>
-    <script src="kAccessories.js"></script>
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        setTimeout(function() {
+          loader.remove();
+        }, 1500); // The animation will disappear after 3000 milliseconds (3 seconds)
+    </script>
     </body>
-
-
 </html>

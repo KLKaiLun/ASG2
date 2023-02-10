@@ -6,7 +6,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="ContactUs.css" />
         <script src="https://kit.fontawesome.com/27cc4ca2c4.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +19,20 @@
         <script src="https://kclothes-1417.restdb.io/assets/js/jquery.datetimepicker.full.min.js"></script>
         <script src="https://kclothes-1417.restdb.io/rest/_jsapi.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
-        <title>K&C | Kids</title>
-        <link rel="stylesheet" href="product.css" />
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <title>K&C | Home</title>
+        <link rel="stylesheet" href="product.css"/>
     </head>
 
     <body>
+        <div id="preloader">
+            <style>
+                body {
+                    overflow: hidden;
+                }
+            </style>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_x62chJ.json" background="#FFFFFF" speed="2" style="width: 100%; height: 100%;" autoplay></lottie-player>
+        </div>
         <header>
             <img class="logo" src="pictures/k&c-modified.png" alt="logo">
             <ul class="navbar">
@@ -59,24 +68,28 @@
             <div class="icons">
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <a href="loginsgnup.html"><i class="fa fa-user" aria-hidden="true"></i></a>
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <a href="shoppingcart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                 <div class="shrink-menu">
                     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 </div>
             </div>
         </header>
 
-        <!--<h1>Our Products</h1>-->
-        <div id="product-container">
-        </div> 
-        <!--
-        <div class="page">
-            <img class="banner" src="https://im.uniqlo.com/global-cms/spa/res1af6316a7008d3c515ff9644c444c727fr.jpg" alt="banner">
-            <h1>Awesome Deals</h1>
-            <p>Wide Variety Of Clothes To Choose From</p>
-            <button>Shop Now!</button>
+        <div class="contactInfo">
+            <h1>Address:</h1>
+            <p>
+                351 Maxwell Rd #16-17
+            </p>
+            <h1>Contact Number:</h1>
+            <p>
+                8713 9814
+            </p>
+            <h1>Email:</h1>
+            <p>
+                kc123@email.com
+            </p>
         </div>
-        -->
+
         <footer class="final-section">
             <div class="col">
                 <h4>About</h4>
@@ -109,8 +122,13 @@
                 <img class="pay" src="pictures/PaymentGate.png" alt="">
             </div>
         </footer>
-    <script src="kAccessories.js"></script>
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        setTimeout(function() {
+          loader.remove();
+        }, 1500); // The animation will disappear after 3000 milliseconds (3 seconds)
+    </script>
     </body>
-
-
 </html>

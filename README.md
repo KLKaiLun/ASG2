@@ -8,8 +8,8 @@ Welcome to our clothing website, the ultimate destination for fashion-forward in
 
 Our website is easy to navigate and user-friendly, making it simple for you to find what you're looking for. We feature high-quality images and detailed product descriptions, so you know exactly what you're getting. Our clothing is made from the finest materials and designed with the latest fashion trends in mind, so you can stay ahead of the curve and look your best every day. So, why wait? Shop now and discover the perfect pieces to elevate your wardrobe!
 
-Intro:
-We are making a website for our clothing store called K&C to sell clothes. Our store will sell all different kinds of clothes, some of which are shirts, pants, jeans and dresses. The target audience for the website is for the general public to purchase any clothes tehy want from our store.
+Design Process:
+We are making a website for our clothing store called K&C to sell clothes. Our store will sell all different kinds of clothes, some of which are shirts, pants, jeans and dresses. The target audience for the website is for the general public to purchase any clothes they want from our store.
 
 Features of website:
 - Putting down the price and rating for each product
@@ -27,6 +27,12 @@ Features of website:
 - Allow people to choose whether to self collect or opt for delivery
 
 - Have a search feature to find items easily
+
+Incompleted features:
+-Shopping cart
+-Search
+-Printing of image for products
+-Adding user information for register and checking if user is in database for login
 
 
 References for pictures used:
