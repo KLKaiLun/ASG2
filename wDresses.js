@@ -33,7 +33,7 @@ window.addEventListener("scroll", function(){
   
           const productImage = document.createElement("img");
           productImage.classList.add("product-image");
-          productImage.src = product.Image;
+          productImage.src = "data:image/jpeg;base64," +product.Image;
   
           const productName = document.createElement("div");
           productName.classList.add("product-name");
@@ -45,7 +45,7 @@ window.addEventListener("scroll", function(){
   
           const productSize = document.createElement("div");
           productSize.classList.add("product-size");
-          productSize.innerText = product.Size;
+          productSize.innerText = "Size:" + product.Size;
   
           const productCategory = document.createElement("div");
           productCategory.classList.add("product-category");

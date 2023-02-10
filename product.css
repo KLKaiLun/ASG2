@@ -13,7 +13,7 @@
 
   .product-card {
     width: calc(25% - 40px);
-    height: 400px;
+    height: 700px;
     margin: 20px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 5px #ccc;
@@ -32,6 +32,16 @@
     margin-top: 10px;
   }
   
+.product-description {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.product-category {
+  font-size: 9px;
+  margin-top: 10px;
+}
+
   .product-price {
     font-size: 18px;
     color: green;
