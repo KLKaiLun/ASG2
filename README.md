@@ -41,8 +41,6 @@ Technologies Used:
 References for pictures used:
  (n.d.). Retrieved from https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/452425/item/goods_32_452425.jpg?width=750. 
 
-Mourya, N. (2022, March 14). How to build a responsive navigation bar using HTML and CSS. MUO. Retrieved February 4, 2023, from https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ 
-
 Awesome, F. (n.d.). Font awesome. Font Awesome, the iconic font and CSS toolkit. Retrieved February 6, 2023, from https://fontawesome.com/v4/
 
 Uniqlo. (n.d.). Retrieved February 7, 2023, from https://www.uniqlo.com/sg/en/ 
