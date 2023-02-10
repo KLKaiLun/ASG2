@@ -34,6 +34,9 @@ Incompleted features:
 -Printing of image for products
 -Adding user information for register and checking if user is in database for login
 
+Technologies Used:
+-Lottie Animations: We added Lottie animations for the loading screen of the website.
+-RestDB.io: We created a database which consisted of the data that we created for the products and users that have signed up for a account.
 
 References for pictures used:
  (n.d.). Retrieved from https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/452425/item/goods_32_452425.jpg?width=750. 
