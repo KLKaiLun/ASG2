@@ -1,11 +1,24 @@
 window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-    })
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+  })
+
+
+  const productContainer = document.getElementById("product-container");
+
+  const shoppingCart = {
+    items: [],
+    addItem: function(product) {
+      this.items.push(product);
+    },
+    removeItem: function(productId) {
+      this.items = this.items.filter(item => item.id !== productId);
+    },
+    getTotal: function() {
+      return this.items.reduce((acc, item) => acc + item.price, 0);
+    },
+  };
   
-  
-  const productContainer = document.getElementById('product-container');
-    
   fetch("https://kclothes-1417.restdb.io/rest/product", {
     headers: {
       "x-apikey": "63dd35e73bc6b255ed0c460e"
@@ -14,27 +27,57 @@ window.addEventListener("scroll", function(){
     .then(response => response.json())
     .then(products => {
       for (const product of products) {
-          if (product.Subcategory === "Dresses" && product.Category === "Women") {  
-              const productCard = document.createElement('div');
-              productCard.classList.add('product-card');
+        if (product.Subcategory === "Dresses" && product.Category === "Women") {
+          const productCard = document.createElement("div");
+          productCard.classList.add("product-card");
   
-              const productImage = document.createElement('img');
-              productImage.classList.add('product-image');
-              productImage.src = product.Image;
+          const productImage = document.createElement("img");
+          productImage.classList.add("product-image");
+          productImage.src = product.Image;
   
-              const productName = document.createElement('div');
-              productName.classList.add('product-name');
-              productName.innerText = product.Name;
+          const productName = document.createElement("div");
+          productName.classList.add("product-name");
+          productName.innerText = product.Name;
   
-              const productPrice = document.createElement('div');
-              productPrice.classList.add('product-price');
-              productPrice.innerText = '$' + product.Price;
+          const productDescription = document.createElement("div");
+          productDescription.classList.add("product-description");
+          productDescription.innerText = product.Description;
   
-              productCard.appendChild(productImage);
-              productCard.appendChild(productName);
-              productCard.appendChild(productPrice);
-              productContainer.appendChild(productCard);
-          }
-      }
-    })
-    .catch(error => console.error(error));
+          const productSize = document.createElement("div");
+          productSize.classList.add("product-size");
+          productSize.innerText = product.Size;
+  
+          const productCategory = document.createElement("div");
+          productCategory.classList.add("product-category");
+          productCategory.innerText = product.Category;
+  
+          const productPrice = document.createElement("div");
+          productPrice.classList.add("product-price");
+          productPrice.innerText = "$" + product.Price;
+  
+          const addToCartButton = document.createElement("button");
+          addToCartButton.innerText = "Add to cart";
+          addToCartButton.addEventListener("click", () => {
+            shoppingCart.addItem({
+              id: product._id,
+              name: product.Name,
+              description: product.Description,
+              size: product.Size,
+              category: product.Category,
+              price: product.Price,
+              image: product.Image
+            });
+          });
+  
+          productCard.appendChild(productImage);
+          productCard.appendChild(productName);
+          productCard.appendChild(productDescription);
+          productCard.appendChild(productSize);
+          productCard.appendChild(productCategory);
+          productCard.appendChild(productPrice);
+          productCard.appendChild(addToCartButton);
+            productContainer.appendChild(productCard);
+        }
+    }
+  })
+  .catch(error => console.error(error));

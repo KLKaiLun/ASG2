@@ -336,7 +336,7 @@ $.ajax(settings).done(function (response) {
   }
 });*/
 
-$.ajax({
+/*$.ajax({
   url: "https://kclothes-1417.restdb.io/rest/product",
   method: "GET",
   headers: {
@@ -356,5 +356,5 @@ $.ajax({
       // Append the new element to the HTML document
       $("body").append(el);
   }
-});
+});*/
 
